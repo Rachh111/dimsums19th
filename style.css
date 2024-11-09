@@ -1,0 +1,150 @@
+/* General styling */
+body {
+    background-color: #f5e0d8;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.card-container {
+    perspective: 1000px;
+}
+
+.card {
+    width: 90vw;
+    max-width: 350px;
+    height: auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 1s;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    background-color: #f8b9b8;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.cake {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #f7a8b8;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.cake-top {
+    background-color: #fff;
+    height: 20px;
+    width: 80%;
+    border-radius: 10px;
+    position: absolute;
+    top: -15px;
+    left: 10%;
+}
+
+/* 19 cake layers */
+.cake-layer {
+    height: 30px;
+    background-color: #f9c6b3;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.candle {
+    background-color: #ffec87;
+    height: 30px;
+    width: 10px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.flame {
+    width: 10px;
+    height: 15px;
+    background-color: #ff9a8b;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+/* Back card */
+.card-back {
+    background-color: #fffdce;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Message box and styling */
+.message-box {
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.message {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ffdfbf;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.message:hover {
+    background-color: #ff9a8b;
+    color: #fff;
+}
+
+/* Mobile responsive design */
+@media screen and (max-width: 600px) {
+    .card-container {
+        perspective: 800px;
+    }
+
+    .message {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .cake-layer {
+        font-size: 16px;
+    }
+}
