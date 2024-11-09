@@ -3,67 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birthday Cake Messages</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Flexible Post-It Wall</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+        }
+
+        /* Background */
+        body {
+            background: linear-gradient(135deg, #90caf9, #42a5f5);
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+            overflow-y: auto;
+        }
+
+        /* Post-It Wall */
+        .post-it-wall {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 450px;
+            width: 100%;
+        }
+
+        /* Post-It Styling */
+        .post-it {
+            background: linear-gradient(135deg, #ffffff, #e3f2fd);
+            padding: 25px;
+            font-size: 18px;
+            color: #1565c0;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(21, 101, 192, 0.3);
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+            line-height: 1.6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-wrap: break-word;
+        }
+
+        /* Hover Effect */
+        .post-it:hover {
+            transform: scale(1.07);
+            background: linear-gradient(135deg, #e1f5fe, #ffffff);
+            box-shadow: 0 12px 24px rgba(21, 101, 192, 0.4);
+        }
+
+        /* Text Styling */
+        .post-it p {
+            margin: 0;
+            padding: 0;
+            font-weight: 500;
+            text-align: justify;
+        }
+
+        /* Mobile Styling */
+        @media (max-width: 600px) {
+            .post-it {
+                font-size: 16px;
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="card-front">
-                <div class="cake">
-                    <div class="cake-top"></div>
-                    <!-- 19 cake layers -->
-                    <div class="cake-layer">🎉</div>
-                    <div class="cake-layer">🎈</div>
-                    <div class="cake-layer">🎂</div>
-                    <div class="cake-layer">🥳</div>
-                    <div class="cake-layer">💐</div>
-                    <div class="cake-layer">🍰</div>
-                    <div class="cake-layer">🌟</div>
-                    <div class="cake-layer">🍭</div>
-                    <div class="cake-layer">💖</div>
-                    <div class="cake-layer">🎉</div>
-                    <div class="cake-layer">🍬</div>
-                    <div class="cake-layer">🍰</div>
-                    <div class="cake-layer">🌸</div>
-                    <div class="cake-layer">✨</div>
-                    <div class="cake-layer">🍒</div>
-                    <div class="cake-layer">🎁</div>
-                    <div class="cake-layer">🍓</div>
-                    <div class="cake-layer">🍪</div>
-                    <div class="cake-layer">🌈</div>
-                </div>
-            </div>
-            <div class="card-back">
-                <div class="message-box">
-                    <!-- 19 Messages -->
-                    <div class="message">🎉 Happy Birthday! 🎂</div>
-                    <div class="message">Wishing you a year full of joy and happiness!</div>
-                    <div class="message">Here's to another amazing year ahead! 🎉</div>
-                    <div class="message">Enjoy your special day to the fullest! 🎈</div>
-                    <div class="message">May all your dreams come true this year! ✨</div>
-                    <div class="message">Cheers to more laughter and love! 🥳</div>
-                    <div class="message">Wishing you success in everything you do! 💼</div>
-                    <div class="message">May this year bring you endless happiness! 🌟</div>
-                    <div class="message">Here’s to more wonderful memories! 📸</div>
-                    <div class="message">Hope your birthday is as sweet as you are! 🍰</div>
-                    <div class="message">May your day be filled with joy and blessings! 🙏</div>
-                    <div class="message">Wishing you health and happiness all year long! ❤️</div>
-                    <div class="message">Sending you a big hug and lots of love! 🤗</div>
-                    <div class="message">May your year ahead be filled with adventures! 🌍</div>
-                    <div class="message">You deserve all the best things in life! 💫</div>
-                    <div class="message">Another year of amazing you! 🥂</div>
-                    <div class="message">Happy birthday to someone who makes the world brighter! 🌈</div>
-                    <div class="message">Enjoy every moment today and always! 🎁</div>
-                    <div class="message">Here's to a year filled with laughter and fun! 😂</div>
-                </div>
-            </div>
-        </div>
+    <div class="post-it-wall">
+        <div class="post-it"><p>Hi Munna, 
+Happy Happy Birthday 🫂❤️. Watching you grow with your art over this past year, has been a blessing to witness. We are so insanely proud of you. Today, I only wish for bigger and greater things to come your way. I can’t wait to see you conquer the world with your music - you deserve all of it and more! May God give you good health, happiness and the strength to achieve all your dreams ❤️ 
+<br>I love you so much and miss you tremendously 🫂 Sending you the biggest hug
+<br>Have the best day Mun ❤️<br>
+Love, Akka 🫂❤️</p></div>
+        <div class="post-it"><p>Happy 19th birthday to you sumant , I hope you get everything you wish about in life , love you :)<br> -YR</p></div>
+        <div class="post-it"><p>To everyone
+Sumant is a friend ,best friend, or a close friend but to me he’s my Anna
+He’s helped me in many ways
+Very grateful to have him in my life
+Happiesttttt 19th birthday Sumantttt
+🥰🥰<br>  -Dhroom</p></div>
+        <div class="post-it"><p>Yenappa bomms full on entering last year of teen now. Have known for more than a decade now. Stay the same and enjoyyy your bday in goaaa.
+Happy Birthday sumanttt 😘🥰
+(Still waiting for your chali chali aaguva remix)<br>  -Amitu</p></div>
+        <div class="post-it"><p>Well, Sumant is the kind of friend whom youd wanna be friends with the rest of your life. Super talented person whose wishes i hope come true. Have a great day Sumant. Happy Birthday<br>  -Mayu</p></div>
+        <div class="post-it"><p>Anna dhod Namaskara anna
+I’m really thankful for how you lifted up our YouTube from nothing to something atleast 
+Devru Andhre Neeve
+Boss in every aspect
+<br>Happy birthday sumant anna awre❤️❤️<br>-Gahan</p></div>
+        <div class="post-it"><p>HAPPY BIRTHDAY SUMAT!! 19 is such a tricky year alva technically adults, but it still doesn’t feel like it. "adulthood" seems daunting but we are here to make it a lil less scary and a lil more entertaining . You deserve all the great things and I'm SO proud of everything you are accomplishing. <br>
+HAPPY 19 <3<br>-Samina</p></div>
+        <div class="post-it"><p>HEPPYY HEPPY BDAYYYY SUM!!
+CANT BELIEVE YOU ARE 19 ALREADY!?
+It's okai you still look like a 14 year old with your haircut 🙂‍↕️
+I HOPE YOU EXCEL IN WHATEVER YOU DREAM FOR<3
+SO SO PROUD OF YOU ALREADY AS TO HOW MUCH YOU HAVE ACHIEVED, OMGG VERY PROUD 🥹🫂
+I MISS YOU GUYS SM, ESPECIALLY OUR LUNCH BREAKS AND TEA SESSIONS 
+<br>FOREVER TRASHUS 💖🎀 
+<br>LOTS OF LOVE AND HUGS
+<br>-Ak-Sara</p></div>
+        <div class="post-it"><p>Happpyy birthday sumant!! Love u sm bro frr. You're the dub to my lub (swalpa cringe but true). <br>Anyways happy birthday again😘😘<br>-Vaish</p></div>
+        <div class="post-it"><p>HAPPY BIRTHDAY DEAREST SUMMI!
+You’re the sweetest and i’m so lucky to be able to call you one of my best friends. After all, being best friends is decided by how loved and supported you feel by them and how well you get along <33
+<br>MAJGE PLS
+<br> -Lakmi: D</p></div>
+        <div class="post-it"><p>I still remember the first time I saw sumanth. There he was in the midst of lunch break in a white shirt with the most gorgeous woman I have ever seen......only now to be known to me as the most sweetest, unbelievably blessed and talented boy. Its a shame I dint know him earlier.
+<br>
+To be so humble whilst so amiable is an art to take upon oneself and he does it the best. Thank you for being born. 
+<br>Ly u summi ⭐<br>-Nidhi</p></div>
+        <div class="post-it"><p>Sumant, you're straight up elevating away from a person to an idea. Your words are kind, heartfelt, thoughtful and so are your actions. At one point I'm gonna watch Mahabharat and you're gonna be the Krishna in it. Tooooooo sweet of you man. I'm beyond honoured to be amongst your circle. <br>Thank you 😊<br>-Chakru</p></div>
+        <div class="post-it"><p>Happy birthday Sumant!!
+I never really got the chance to get to know you that well...but from the few times that i've talked to you and heard about you, you're so talented yet so humble.
+<br>Keep blessing us with your amazing music!
+I hope you have a great year ahead.<br>-Rishita</p></div>
+        <div class="post-it"><p>Sumant is best ,best is sumant 
+Sumant is amazing, sumant flute skills top class sumant badminton skills top class I love sumant...<br>happy birthday sumant<br>-Sohan</p></div>
+        <div class="post-it"><p>Sumant is amazing friend,amazing sumant is , flute skills very best and badminton very nice .I Lou sumant too..<br>Happy Birthday Sumant<br>-Samarth</p></div>
+        <div class="post-it"><p>Hi Sumant, Happy birthday!<br>
+Keep rocking! There’s something absolutely magical in what you’re doing. Here’s to creating legendary tracks and unforgettable melodies this year!<br>-Shashank</p></div>
+        <div class="post-it"><p>happy birthday sumat!!!! knowing you is awesome! i’m so proud of who you are and who you’re becoming. <br>love always, maans💗</p></div>
+        <div class="post-it"><p>Happy Dimsum day! What a privilege it is to have a best friend like you. Thank you for lighting up this world with your art everyday. You are one in a gazillion, unmatchable. 19 years of being an absolute blessing to those around you and creating magic for everyone. You deserve every bit of love and happiness in this universe, and more (lot more).<br>Happy birthday<3<br>-Moosi</p></div>
+        <div class="post-it"><p><b>HAPPY BIRTHDAY SUMANT!<br><b>WE LOVE YOU<3</p></div>
     </div>
-
-    <script src="script.js"></script>
-
 </body>
 </html>
+
 
